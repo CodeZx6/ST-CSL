@@ -1,4 +1,4 @@
-# ST-CSL: Spatio-Temporal Contrastive Self-supervised Learning
+# Spatio-temporal fusion and contrastive learning for urban flow prediction
 
 A deep learning framework for urban flow prediction leveraging contrastive self-supervised pretraining and multi-component spatio-temporal modeling.
 
