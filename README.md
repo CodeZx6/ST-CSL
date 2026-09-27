@@ -1,18 +1,20 @@
 # Spatio-temporal fusion and contrastive learning for urban flow prediction
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.knosys.2023.111104-blue)](https://doi.org/10.1016/j.knosys.2023.111104)
-[![Project page](https://img.shields.io/badge/project-page-blue)](https://codezx6.github.io/papers/st-csl.html)
+[![Paper page](https://img.shields.io/badge/paper-page-blue)](https://codezx6.github.io/papers/st-csl.html)
 
-Official implementation of **ST-CSL** — *Spatio-temporal fusion and contrastive learning for urban flow prediction* (Knowledge-Based Systems 2023). ST-CSL fuses temporal-view and spatial-view contrastive learning so an urban flow predictor captures global periodicity and the hidden flow relationships between functionally similar regions.
+Official code repository for **ST-FCL** (Knowledge-Based Systems 2023): *Spatio-temporal fusion and contrastive learning for urban flow prediction*. The paper calls the method **ST-FCL**; this repository is named ST-CSL. The released code has closeness, period and trend encoders and a distance-threshold contrastive pretraining loss; the paper's temporal-view triplet pretraining and Mix Layers are not included.
 
-📄 Paper: https://doi.org/10.1016/j.knosys.2023.111104 · 🌐 Project page with abstract, FAQ and BibTeX: https://codezx6.github.io/papers/st-csl.html · 👤 Author: [Xu Zhang](https://codezx6.github.io)
+ST-FCL predicts grid-level urban inflow and outflow by fusing temporal and spatial views, learned through contrastive pretraining, with an external-factor view. On the full TaxiBJ dataset it reaches RMSE 14.71, against 15.41 for the best baseline, ATFM.
+
+📄 Paper: https://doi.org/10.1016/j.knosys.2023.111104 · 🌐 Paper page with quoted results, FAQ and BibTeX: https://codezx6.github.io/papers/st-csl.html
 
 
 A deep learning framework for urban flow prediction leveraging contrastive self-supervised pretraining and multi-component spatio-temporal modeling.
 
 ## Overview
 
-ST-CSL addresses the challenge of spatio-temporal flow prediction in urban environments through a novel contrastive learning framework that captures temporal closeness, period, and trend dependencies.
+This code addresses the challenge of spatio-temporal flow prediction in urban environments through a contrastive learning framework that captures temporal closeness, period, and trend dependencies.
 
 ### Key Features
 
@@ -22,7 +24,7 @@ ST-CSL addresses the challenge of spatio-temporal flow prediction in urban envir
 
 ### Model Architecture
 
-The ST-CSL framework consists of:
+The code in this repository consists of:
 
 1. **Component Encoders**: Process closeness, period, and trend dependencies independently
 2. **Contrastive Module**: Learns spatial representations through contrastive objectives

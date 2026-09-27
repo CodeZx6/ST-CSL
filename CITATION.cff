@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper in preferred-citation.
+type: software
+title: 'ST-FCL: code for "Spatio-temporal fusion and contrastive learning for urban flow prediction"'
+authors:
+- family-names: Zhang
+  given-names: Xu
+- family-names: Gong
+  given-names: Yongshun
+- family-names: Zhang
+  given-names: Chengqi
+- family-names: Wu
+  given-names: Xiaoming
+- family-names: Guo
+  given-names: Ying
+- family-names: Lu
+  given-names: Wenpeng
+- family-names: Zhao
+  given-names: Long
+- family-names: Dong
+  given-names: Xiangjun
+repository-code: https://github.com/CodeZx6/ST-CSL
+url: https://codezx6.github.io/papers/st-csl.html
+abstract: ST-FCL predicts grid-level urban inflow and outflow by fusing temporal and spatial views, learned through contrastive
+  pretraining, with an external-factor view. On the full TaxiBJ dataset it reaches RMSE 14.71, against 15.41 for the best
+  baseline, ATFM.
+keywords:
+- urban flow prediction
+- crowd flow prediction
+- contrastive learning
+- spatio-temporal fusion
+- multi-view representation fusion
+- multi-view influencing factors
+- spatio-temporal systems
+- traffic prediction
+preferred-citation:
+  type: article
+  title: Spatio-temporal fusion and contrastive learning for urban flow prediction
+  authors:
+  - family-names: Zhang
+    given-names: Xu
+  - family-names: Gong
+    given-names: Yongshun
+  - family-names: Zhang
+    given-names: Chengqi
+  - family-names: Wu
+    given-names: Xiaoming
+  - family-names: Guo
+    given-names: Ying
+  - family-names: Lu
+    given-names: Wenpeng
+  - family-names: Zhao
+    given-names: Long
+  - family-names: Dong
+    given-names: Xiangjun
+  year: 2023
+  doi: 10.1016/j.knosys.2023.111104
+  url: https://doi.org/10.1016/j.knosys.2023.111104
+  journal: Knowledge-Based Systems
+  volume: '282'
+  start: '111104'
+license: MIT
